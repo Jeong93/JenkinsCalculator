@@ -47,6 +47,9 @@ class Calculator {
         for (int i = 2; i < n + 1; i++) {
             fibonacciNumbers.add(fibonacciNumbers.get(i - 2) + fibonacciNumbers.get(i - 1));
         }
+        if (n == 0) {
+            return 0;
+        }
         return fibonacciNumbers.get(fibonacciNumbers.size() - 1);
     }
 
